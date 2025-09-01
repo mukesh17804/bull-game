@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bull Embrace – The One with Hugs</title>
+  <meta name="theme-color" content="#3A234B">
+  <link rel="manifest" href="manifest.json">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="app-header">
+    <h1>Bull Embrace</h1>
+    <p class="subtitle">The One with Hugs — a cozy, Friends-inspired arcade PWA</p>
+  </header>
+
+  <main>
+    <div class="top-bar">
+      <button id="playBtn">Start</button>
+      <button id="musicBtn">Play Music</button>
+      <span class="spacer"></span>
+      <span id="score">Score: 0</span>
+      <span id="lives">♥♥♥</span>
+    </div>
+
+    <canvas id="game" width="480" height="640" aria-label="Bull Embrace Game" role="application"></canvas>
+
+    <section class="howto">
+      <h2>How to play</h2>
+      <ul>
+        <li>Move your circle to gently embrace the friendly bull during calm or tired moments.</li>
+        <li>Avoid hugging while it's charging — you'll lose a heart!</li>
+        <li>Mouse/Touch to move. Hold <kbd>Space</kbd> or press the on-screen "Hug" to embrace.</li>
+        <li>Chain safe hugs for combo points.</li>
+      </ul>
+      <p class="note"><strong>Note:</strong> This is a fan-themed homage — no official logos or copyrighted media.</p>
+    </section>
+
+    <div class="mobile-controls">
+      <button id="hugBtn">Hug</button>
+    </div>
+  </main>
+
+  <audio id="bgAudio" src="bg_loop.wav" loop preload="auto"></audio>
+
+  <footer>
+    <p>Installable PWA — works offline once loaded. Made with ☕ & JavaScript.</p>
+  </footer>
+
+  <script src="game.js"></script>
+</body>
+</html>

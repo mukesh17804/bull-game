@@ -1,0 +1,26 @@
+
+:root{
+  --primary:#3A234B;
+  --accent:#F5BC52;
+  --love:#E65578;
+  --muted:#F2EAF6;
+}
+*{box-sizing:border-box;font-family: 'Segoe UI', Roboto, Arial, sans-serif;}
+body{margin:0;background:linear-gradient(180deg,var(--muted),#fff);color:#222;display:flex;flex-direction:column;min-height:100vh;}
+.app-header{background:var(--primary);color:white;text-align:center;padding:18px 12px;}
+.app-header h1{margin:0;font-size:1.7rem;letter-spacing:0.4px;}
+.subtitle{margin:6px 0 0;opacity:.95}
+main{flex:1;max-width:980px;margin:16px auto;padding:12px;width:95%;}
+.top-bar{display:flex;gap:8px;align-items:center;margin:8px 0;}
+.top-bar button{padding:8px 12px;border-radius:10px;border:1px solid rgba(0,0,0,.12);background:white;cursor:pointer;}
+.spacer{flex:1}
+#score,#lives{font-weight:700;margin-left:8px;}
+#game{width:100%;max-width:560px;background:white;border-radius:16px;box-shadow:0 8px 28px rgba(0,0,0,.08);display:block;margin:0 auto;}
+.howto{max-width:560px;margin:14px auto;}
+.howto h2{font-size:1.05rem;margin:12px 0 6px;}
+.howto ul{margin:8px 0 0 18px;}
+.howto .note{font-size:.9rem;color:#444}
+.mobile-controls{display:flex;justify-content:center;margin:12px 0;}
+#hugBtn{padding:12px 18px;border-radius:999px;border:1px solid rgba(0,0,0,.12);background:var(--love);color:white;font-weight:700;}
+
+footer{padding:12px;text-align:center;color:#666;font-size:.9rem;}
